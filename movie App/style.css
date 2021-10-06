@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 5px solid rgb(0, 51, 34);
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.header h1 {
+  color: rgb(88, 0, 86);
+}
+.header h1 span {
+  color: rgb(0, 80, 150);
+}
+.search {
+  width: 100px;
+  padding: 8px 10px;
+  border: 2px solid rgb(88, 0, 86);
+  border-radius: 20px;
+  transition: width 1s ease;
+}
+.header div {
+  position: relative;
+}
+.search:hover {
+  width: 200px;
+}
+.fas {
+  color: grey;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.section {
+  width: 100%;
+  min-height: 517px;
+  background-color: rgb(0, 80, 150);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px 0;
+}
+.section div {
+  width: 20%;
+  height: 400px;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+  overflow: hidden;
+}
+
+/** inside DIV **/
+
+.section div img {
+  width: 100%;
+  height: 80%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.section div span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  padding: 0 15px;
+}
+.overview {
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  padding: 25px 30px;
+  text-align: justify;
+  background-color: rgb(0, 30, 44);
+  z-index: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  bottom: -100%;
+  transition: all 0.5s ease;
+}
+.overview h4 {
+  padding: 10px 15px;
+  color: lightblue;
+}
+.section div:hover .overview {
+  bottom: 0;
+}
+.movieTitle {
+  font-size: 15px;
+}
+.vote {
+  width: 30px;
+  color: aliceblue;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  box-shadow: inset 0 0 3px white;
+  border-radius: 5px;
+}
+
+.greenRate {
+  box-shadow: inset 0 0 3px rgb(28, 104, 13);
+  background-color: rgb(0, 255, 98);
+  border: 2px solid rgb(43, 255, 0);
+}
+.redRate {
+  box-shadow: inset 0 0 3px rgb(255, 174, 174);
+  background-color: rgb(255, 0, 0);
+  border: 2px solid rgb(107, 5, 5);
+}
+
+.yellowRate {
+  box-shadow: inset 0 0 3px rgb(93, 110, 32);
+  background-color: rgb(255, 136, 0);
+  border: 2px solid rgb(253, 186, 61);
+}
