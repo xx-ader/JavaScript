@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>Font Switcher</h1>
+
+  <p>Write your text here :</p>
+  <input id="inputText" type="text" value="">
+  <p id="showText"></p>
+  <p>Select a font</p>
+  <select class="font-fami" name="">
+    <option value="0">Choose an Option</option>
+    <option value="sans-serif">Sans Serif</option>
+    <option value="Arial, Helvetica, sans-serif">Arial</option>
+    <option value="Verdana">Verdana</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Lucida Sans">Lucida Sans</option>
+    <option value="Gill Sans">Gill Sans</option>
+  </select>
+  <div class="">
+
+
+    <p>Select a Font-Size<input id="sizeFont" min="50" max="150" value="50" type="range"></p>
+
+    <p>Select a text Color<input id="text-color" type="color"></p>
+
+  </div>
+  <button type="button" class="generateBtn">Generate</button>
+
+  <div class="result">
+    <fieldset>
+      <legend>Font Family</legend>
+      <span class="clone fontfamily"></span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Font Size</legend>
+      <span class="clone fontsize"></span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Color</legend>
+      <span class="clone color"></span>
+    </fieldset>
+
+  </div>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
