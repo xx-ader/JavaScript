@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="themes">
+
+        <button class="tmbtn1 tmbtn"></button>
+        <button class="tmbtn2 tmbtn"></button>
+        <button class="tmbtn3 tmbtn"></button>
+    </div>
+    <h2>To-Do List</h2>
+    <main class="container">
+        <section class="sec1">
+            <input placeholder="Write Down your To-do !!" class="writeText" type="text" /><span class="addBtn"><i
+                    class="fas fa-plus"></i></span>
+        </section>
+
+        <section class="sec2">
+            <h3>List</h3>
+            <ul class="ulList">
+                <!-- data come from local storage js  -->
+            </ul>
+        </section>
+
+        <section class="sec3">
+            <div class="buttons">
+                <button class="clearBtn">Clear All</button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
